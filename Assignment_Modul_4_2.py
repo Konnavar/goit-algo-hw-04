@@ -8,7 +8,7 @@ def get_cats_info(path):
                 cat_dict = { # словник, який містить інфу про одного кота
                     "id": cat_data[0],
                     "name": cat_data[1],
-                    "age": int(cat_data[2])
+                    "age": cat_data[2]
                 }
                 cats_info.append(cat_dict) # додавання нового словника до списку
     except FileNotFoundError:
